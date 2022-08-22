@@ -7,10 +7,10 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-      with:
-        persist-credentials: false
+    - uses: actions/checkout@v2
+    - name: Config 
+      # with:
+      #   persist-credentials: false
       run: |
         git config --global user.email "meishenlieshou@gmail.com"
         git config --global user.name "meishenlieshou"
