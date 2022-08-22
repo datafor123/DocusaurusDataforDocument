@@ -2,6 +2,10 @@
   "name": "datafor-document",
   "version": "0.0.0",
   "private": true,
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/datafor123/DocusaurusDataforDocument.git"
+  },
   "scripts": {
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
