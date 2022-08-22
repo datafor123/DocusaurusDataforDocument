@@ -34,13 +34,13 @@ const config = {
 
 	title: "DATAFOR数据可视化与分析平台帮助文档",
 	tagline: "DATAFOR",
-	url: "https://datafor.com.cn",
-	baseUrl: "/",
+	url: "https://datafor123.github.io/",
+	baseUrl: "/DocusaurusDataforDocument/",
 	onBrokenLinks: "throw",
 	onBrokenMarkdownLinks: "warn",
 	favicon: "img/favicon.ico",
-	organizationName: "上海数为信息技术有限公司", // Usually your GitHub org/user name.
-	projectName: "DATAFOR数据可视化与分析平台", // Usually your repo name.
+	organizationName: "datafor123", // Usually your GitHub org/user name.
+	projectName: "DocusaurusDataforDocument", // Usually your repo name.
 	i18n: {
 		defaultLocale: "zh-CN",
 		locales: ["zh-CN", "en"],
