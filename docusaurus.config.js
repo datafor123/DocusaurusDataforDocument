@@ -101,7 +101,7 @@ const config = {
 		/** @type {import('@docusaurus/preset-classic').ThemeConfig} */
 		({
 			navbar: {
-				title: "帮助文档",
+				title: "产品帮助文档",
 				items: [
 					{
 						type: "localeDropdown",
