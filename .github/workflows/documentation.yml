@@ -23,6 +23,7 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: build
