@@ -1,0 +1,2 @@
+# dataforDocument
+ Docusaurus-datafor-docs
