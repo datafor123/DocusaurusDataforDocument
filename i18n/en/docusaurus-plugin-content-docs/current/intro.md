@@ -1,4 +1,8 @@
 ﻿---
+
+---
+
+---
 sidebar_position: 1
 description: 这是一个帮助文档。
 keywords:
@@ -15,11 +19,9 @@ title: 欢迎
 
 DATAFOR数据可视化与分析平台可以帮您轻松进行探索式数据分析，将枯燥的数据变得直观、生动、便于理解，协助您理解业务、发现问题、找到原因，为进一步的决策提供依据。
 
-<img src={require('@site/static/img/datafor/image-20220301171626435.png').default} 
-  style={{zoom:'100%'}}
-  align='left'
-/>
-<div style={{clear:"both"}}></div>
+![](../../../../static/img/en/image-20220301171626435.png)
+
+
 
 > 🚀**本文档持续更新中...**
 
