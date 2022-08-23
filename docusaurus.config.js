@@ -36,7 +36,7 @@ const config = {
 	tagline: "DATAFOR",
 	url: "https://datafor123.github.io/",
 	baseUrl: "/DocusaurusDataforDocument/",
-	onBrokenLinks: "throw",
+	onBrokenLinks: "log", //记录错误链接即可，不要阻塞编译
 	onBrokenMarkdownLinks: "warn",
 	favicon: "img/favicon.ico",
 	organizationName: "datafor123", // Usually your GitHub org/user name.
