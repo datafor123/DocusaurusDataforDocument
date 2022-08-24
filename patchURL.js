@@ -43,7 +43,7 @@ travel(
 				">>to patch url:",
 				src,
 				";",
-				String(content).match(/\/static\/img\//g)
+				String(fs.readFileSync(src)).match(/\/static\/img\//g)
 			);
 		}
 	}
