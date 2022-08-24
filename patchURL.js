@@ -30,7 +30,7 @@ travel(
 	"./build",
 	function(item, deep, trace, src) {
 		const ext = path.extname(item);
-		return ext === ".html";
+		return ext === ".html" || ext === ".js";
 	},
 	function(item, deep, trace, src, stats) {
 		const content = fs.readFileSync(src);
