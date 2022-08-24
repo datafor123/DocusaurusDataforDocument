@@ -30,12 +30,12 @@ travel(
 	"./build",
 	function(item, deep, trace, src) {
 		const ext = path.extname(item);
-		console.log(">>page:", src);
 		return ext === ".html";
 	},
 	function(item, deep, trace, src, stats) {
 		const content = fs.readFileSync(src);
 		if (String(content).match(/\/static\/img\//g)) {
+			console.log(">>to patch url:", src);
 			fs.writeFileSync(
 				src,
 				String(content).replace(/\/static\/img\//g, "/img/")
