@@ -36,16 +36,24 @@ travel(
 		const content = fs.readFileSync(src);
 		//const reg = new RegExp('src="../../static/img/', "ig");
 		const reg = new RegExp("../../static/img/", "ig");
+		const reg3 = new RegExp("../../../static/img/", "ig");
+		const reg4 = new RegExp("../../../../static/img/", "ig");
 		if (String(content).match(reg)) {
 			fs.writeFileSync(
 				src,
 				String(content).replace(reg, "/DocusaurusDataforDocument/img/")
 			);
-			console.log(
-				">>to patch url:",
+		}
+		if (String(content).match(reg3)) {
+			fs.writeFileSync(
 				src,
-				";",
-				String(fs.readFileSync(src)).match(reg)
+				String(content).replace(reg3, "/DocusaurusDataforDocument/img/")
+			);
+		}
+		if (String(content).match(reg4)) {
+			fs.writeFileSync(
+				src,
+				String(content).replace(reg4, "/DocusaurusDataforDocument/img/")
 			);
 		}
 	}
