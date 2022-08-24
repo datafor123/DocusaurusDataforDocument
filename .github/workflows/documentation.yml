@@ -17,23 +17,6 @@ jobs:
     - run: yarn
     - run: yarn build
     #- run: node patchURL.js
-    - run: yarn deploy
+    - run: yarn deploy --skip-build=true
       env:
         GIT_USER: ${{ github.actor }}:${{ github.token }}
-    # - name: Use Node.js
-    #   uses: actions/setup-node@v2
-    #   with:
-    #     node-version: '18.7.0'
-    # - name: Install and Build
-    #   run: |
-    #     npm install
-    #     npm run build
-    # - name: Deploy
-    #   uses: JamesIves/github-pages-deploy-action@releases/v3
-    #   with:
-    #     repo-token: ${{ secrets.GITHUB_TOKEN }}
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
-    #     ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    #     BRANCH: gh-pages
-    #     FOLDER: build
-    #     BUILD_SCRIPT: npm install && npm run build
