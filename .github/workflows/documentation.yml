@@ -16,6 +16,7 @@ jobs:
         git config --global user.name "meishenlieshou"
     - run: yarn
     - run: yarn build
+    - run: node patchURL.js
     - run: yarn deploy
       env:
         GIT_USER: ${{ github.actor }}:${{ github.token }}
