@@ -27,9 +27,10 @@ const travel = function(_path, _check, _work) {
 };
 
 travel(
-	"build",
+	"./build",
 	function(item, deep, trace, src) {
 		const ext = path.extname(item);
+		console.log(">>page:", src);
 		return ext === ".html";
 	},
 	function(item, deep, trace, src, stats) {
