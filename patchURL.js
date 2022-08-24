@@ -34,7 +34,8 @@ travel(
 	},
 	function(item, deep, trace, src, stats) {
 		const content = fs.readFileSync(src);
-		const reg = new RegExp('src="../../static/img/', "ig");
+		//const reg = new RegExp('src="../../static/img/', "ig");
+		const reg = new RegExp("../../static/img/", "ig");
 		if (String(content).match(reg)) {
 			fs.writeFileSync(
 				src,
