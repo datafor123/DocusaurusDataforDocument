@@ -11,7 +11,7 @@ sidebar_position: 80
 
 1. 展开X轴样式标签
 
-<img src="../../../static/img/datafor/visualizer/image-20220301195823531.png"  align="left" />
+<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301195823531.png"  /> </div>
 
 2. 设置线条
 
@@ -26,13 +26,13 @@ sidebar_position: 80
 
    轴名称显示在X轴的右侧。文本可以自定义输入。同时可以设置文本的字体、颜色等文本属性。
 
-<img src="../../../static/img/datafor/visualizer/image-20220301201153195.png"  align="left" />
+<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301201153195.png"  /> </div>
 
 ## Y轴
 
 1. 展开Y轴样式标签
 
-<img src="../../../static/img/datafor/visualizer/image-20220301201414723.png"  align="left" />
+<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301201414723.png"  /> </div>
 
 2. 设置线条
 
@@ -51,4 +51,4 @@ sidebar_position: 80
 
    设置轴的范围是否以最小值/零开始。
 
-<img src="../../../static/img/datafor/visualizer/image-20220301204812520.png"  align="left" />
+<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301204812520.png"  /> </div>
