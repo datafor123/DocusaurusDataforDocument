@@ -101,7 +101,10 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: "产品帮助文档",
+        title: "帮助文档",
+        logo: {
+          src: "img/DataFor-ImageFont.svg"
+        },
         items: [
           {
             type: "localeDropdown",
