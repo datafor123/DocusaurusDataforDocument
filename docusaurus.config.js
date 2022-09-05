@@ -35,7 +35,7 @@ const config = {
   title: "DATAFOR数据可视化与分析平台帮助文档",
   tagline: "DATAFOR",
   url: "https://datafor123.github.io/",
-  baseUrl: "/docs",
+  baseUrl: "/docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
