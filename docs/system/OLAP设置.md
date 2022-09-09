@@ -5,7 +5,7 @@
 
 Datafor内置了一个OLAP引擎，根据项目的不同场景，可以配置OLAP。
 
-![image-20220904214159818](OLAP设置.assets/image-20220904214159818.png)
+<div align="left"><img src="../../static/img/datafor/system/image-20220904214159818.png"  width="80%" /></div>
 
 | 配置项                       | 说明 |
 | ---------------------------- | ---- |
