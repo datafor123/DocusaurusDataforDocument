@@ -1,3 +1,8 @@
+---
+id: jcyfx-qrdwdyy
+title: 如何将Datafor页面嵌入到我的应用
+sidebar_position: 30
+---
 # 如何将Datafor页面嵌入到我的应用
 
 ## 没有数据权限控制的页面
