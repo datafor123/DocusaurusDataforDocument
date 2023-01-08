@@ -8,7 +8,7 @@ keywords:
   ]
 slug: /
 id: intro
-title: Welcome datafor
+title: Welcome
 ---
 
 # Datafor data visualization and analysis
