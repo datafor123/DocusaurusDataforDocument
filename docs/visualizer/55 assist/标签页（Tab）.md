@@ -17,7 +17,7 @@ sidebar_position: 10
 
 1. 辅助组件中选择“标签页”组件
 
-<img src="../../../static/img/datafor/visualizer/image-20230109131918435.png" alt="image-20230109131918435" " width="67%" /></div>
+<div align="left"><img src="../../../static/img/datafor/visualizer/image-20230109131918435.png" alt="image-20230109131918435" " width="67%" /></div>
 
 2. 增加新的标签页
 
