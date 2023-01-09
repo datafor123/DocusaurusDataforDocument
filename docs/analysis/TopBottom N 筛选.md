@@ -13,7 +13,7 @@ sidebar_position: 100
 
 在指标菜单中选择”条数限制“菜单项，并打开“开启条数限制”开关。
 
-   <div align="left"><img src="../../static/img/datafor/analysis/image-20230108201604207.png" alt="image-20230108201604207" " width="50%" /></div>
+   <div align="left"><img src="../../static/img/datafor/analysis/image-20230108201604207.png" alt="image-20230108201604207"  width="50%" /></div>
 
 - 限制类型：返回前N名，返回后N名
 - 排序指标：选择排序指标
@@ -22,4 +22,3 @@ sidebar_position: 100
 完成设置按“确定”按钮
 
    <div align="left"><img src="../../static/img/datafor/analysis/image-20230108201742206.png" /></div>
-
