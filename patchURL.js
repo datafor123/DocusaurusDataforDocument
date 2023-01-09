@@ -41,7 +41,7 @@ travel(
     const reg4 = new RegExp("../../../../static/img/", "ig");
     const reg5 = new RegExp("../../../../../static/img/", "ig");
     const listArray = [reg0, reg, reg3, reg4, reg5];
-    if (String(content).match(new RegExp("/static/img/en", ig))) {
+    if (String(content).match(new RegExp("/static/img/en", "ig"))) {
       listArray.reverse().forEach(function(reg) {
         if (String(content).match(reg)) {
           fs.writeFileSync(src, String(content).replace(reg, baseURL + "img/"));
