@@ -39,17 +39,35 @@ travel(
     const reg = new RegExp("../../static/img/", "ig");
     const reg3 = new RegExp("../../../static/img/", "ig");
     const reg4 = new RegExp("../../../../static/img/", "ig");
-    if (String(content).match(reg0)) {
-      fs.writeFileSync(src, String(content).replace(reg0, baseURL + "img/"));
-    }
-    if (String(content).match(reg)) {
-      fs.writeFileSync(src, String(content).replace(reg, baseURL + "img/"));
-    }
-    if (String(content).match(reg3)) {
-      fs.writeFileSync(src, String(content).replace(reg3, baseURL + "img/"));
-    }
-    if (String(content).match(reg4)) {
-      fs.writeFileSync(src, String(content).replace(reg4, baseURL + "img/"));
+    const reg5 = new RegExp("../../../../../static/img/", "ig");
+    const listArray = [reg0, reg, reg3, reg4, reg5];
+    if (String(content).match(new RegExp("/static/img/en", "ig"))) {
+      listArray.reverse().forEach(function(reg) {
+        if (String(content).match(reg)) {
+          fs.writeFileSync(src, String(content).replace(reg, baseURL + "img/"));
+        }
+      });
+      // if (String(content).match(reg5)) {
+      //   fs.writeFileSync(src, String(content).replace(reg5, baseURL + "img/"));
+      // }
+      // if (String(content).match(reg4)) {
+      //   fs.writeFileSync(src, String(content).replace(reg4, baseURL + "img/"));
+      // }
+      // if (String(content).match(reg3)) {
+      //   fs.writeFileSync(src, String(content).replace(reg3, baseURL + "img/"));
+      // }
+      // if (String(content).match(reg)) {
+      //   fs.writeFileSync(src, String(content).replace(reg, baseURL + "img/"));
+      // }
+      // if (String(content).match(reg0)) {
+      //   fs.writeFileSync(src, String(content).replace(reg0, baseURL + "img/"));
+      // }
+    } else {
+      listArray.forEach(function(reg) {
+        if (String(content).match(reg)) {
+          fs.writeFileSync(src, String(content).replace(reg, baseURL + "img/"));
+        }
+      });
     }
   }
 );
