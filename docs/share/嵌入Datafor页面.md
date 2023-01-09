@@ -1,6 +1,6 @@
 ---
 id: jcyfx-qrdwdyy
-title: 如何将Datafor页面嵌入到我的应用
+title: 嵌入Datafor页面
 sidebar_position: 30
 ---
 # 如何将Datafor页面嵌入到我的应用
