@@ -1,4 +1,5 @@
-﻿{
-  "label": "Quick start",
-  "position": 1
+{
+    "type": "category",
+    "label": "Quick start",
+    "position": 1
 }
