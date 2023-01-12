@@ -1,3 +1,78 @@
 {
-	
+    "version.label": {
+        "message": "Next",
+        "description": "The label for version current"
+    },
+    "sidebar.tutorialSidebar.category.快速入门": {
+        "message": "Quick start",
+        "description": "The label for category 快速入门 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.安装和部署": {
+        "message": "安装和部署",
+        "description": "The label for category 安装和部署 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.控制台": {
+        "message": "控制台",
+        "description": "The label for category 控制台 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.数据源": {
+        "message": "数据源",
+        "description": "The label for category 数据源 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.分析模型": {
+        "message": "分析模型",
+        "description": "The label for category 分析模型 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.数据可视化": {
+        "message": "数据可视化",
+        "description": "The label for category 数据可视化 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.页面": {
+        "message": "页面",
+        "description": "The label for category 页面 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.图表组件": {
+        "message": "图表组件",
+        "description": "The label for category 图表组件 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.地图": {
+        "message": "地图",
+        "description": "The label for category 地图 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.筛选组件": {
+        "message": "筛选组件",
+        "description": "The label for category 筛选组件 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.辅助组件": {
+        "message": "辅助组件",
+        "description": "The label for category 辅助组件 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.数据分析": {
+        "message": "数据分析",
+        "description": "The label for category 数据分析 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.集成与分享": {
+        "message": "集成与分享",
+        "description": "The label for category 集成与分享 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.工具": {
+        "message": "工具",
+        "description": "The label for category 工具 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.系统管理": {
+        "message": "系统管理",
+        "description": "The label for category 系统管理 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.常见问题": {
+        "message": "常见问题",
+        "description": "The label for category 常见问题 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.高级": {
+        "message": "高级",
+        "description": "The label for category 高级 in sidebar tutorialSidebar"
+    },
+    "sidebar.tutorialSidebar.category.最佳实践": {
+        "message": "最佳实践",
+        "description": "The label for category 最佳实践 in sidebar tutorialSidebar"
+    }
 }
