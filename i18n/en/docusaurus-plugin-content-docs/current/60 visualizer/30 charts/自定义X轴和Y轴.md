@@ -1,54 +1,52 @@
 ---
 id: sjfxyksh-zdyxzhyz
-title: 自定义X轴和Y轴
+title: Customize the X and Y axes
 sidebar_position: 80
 ---
-# 自定义X轴和Y轴
+# Customize the X and Y axes
 
-不是所有图表组件都有坐标轴，例如，饼图就没有坐标轴。有坐标轴的组件的X轴和Y轴的自定义选项也可能不是完全一样。这里我们以柱状图为例介绍一些常用选项。
+Not all chart components have axes, for example, pie charts do not have axes. The customization options for X-axis and Y-axis of components with coordinate axes may not be exactly the same. Here we take the histogram as an example to introduce some common options.
 
-## X轴
+## X axis
 
-1. 展开X轴样式标签
+1. Expand the X-Axis Styles tab
 
-<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301195823531.png"  /> </div>
+   <div align="left"><img src="../../../../../../static/img/en/datafor/visualizer/image-20230113185625032.png"  width="300" /> </div>
 
-2. 设置线条
+2. Line
 
-   调整线条粗细、线条颜色、线条样式。
+   Adjust line thickness, line color, line style.
 
-3. 设置刻度文本
+3. Scale text
 
-   是否显示肯定文本，设置文本字体、颜色、是否粗体、是否斜体。
-   当柱子间距太小，刻度文本显示位置不够时经常需要旋转刻度文本。
+    Whether to display positive text, set the text font, color, whether it is bold, whether italic.
+    It is often necessary to rotate the scale text when the distance between the columns is too small and the display position of the scale text is not enough.
 
-4. 设置名称
+4. Axis name
 
-   轴名称显示在X轴的右侧。文本可以自定义输入。同时可以设置文本的字体、颜色等文本属性。
+    Axis names are displayed to the right of the X-axis. Text can be custom entered. At the same time, you can set text properties such as font and color of the text.
 
-<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301201153195.png"  /> </div>
 
-## Y轴
+## Y axis
 
-1. 展开Y轴样式标签
+1. Expand the Y-Axis Styles tab
 
-<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301201414723.png"  /> </div>
+   <div align="left"><img src="../../../../../../static/img/en/datafor/visualizer/image-20230113185659133.png"  width="300" /> </div>
 
-2. 设置线条
 
-   调整线条粗细、线条颜色、线条样式。
+2. Line
 
-3. 设置刻度文本
+    Adjust line thickness, line color, line style.
 
-   是否显示肯定文本，设置文本字体、颜色、是否粗体、是否斜体。
-   当柱子间距太小，刻度文本显示位置不够时经常需要旋转刻度文本。
+3. Scale labels
 
-4. 设置名称
+    Whether to display positive text, set the text font, color, whether it is bold, whether italic.
+    It is often necessary to rotate the scale text when the distance between the columns is too small and the display position of the scale text is not enough.
 
-   轴名称显示在X轴的右侧。文本可以自定义输入。同时可以设置文本的字体、颜色等文本属性。
+4. Axis name
 
-5. 零对齐
+    Axis name are displayed to the right of the X-axis. Text can be custom entered. At the same time, you can set text properties such as font and color of the text.
 
-   设置轴的范围是否以最小值/零开始。
+5. Zero align
 
-<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301204812520.png"  /> </div>
+    Sets whether the range of the axis starts at min/zero.

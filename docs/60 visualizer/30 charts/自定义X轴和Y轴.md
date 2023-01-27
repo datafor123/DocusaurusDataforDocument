@@ -11,7 +11,7 @@ sidebar_position: 80
 
 1. 展开X轴样式标签
 
-<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301195823531.png"  /> </div>
+<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301195823531.png"   width="300"  /> </div>
 
 2. 设置线条
 
@@ -32,7 +32,7 @@ sidebar_position: 80
 
 1. 展开Y轴样式标签
 
-<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301201414723.png"  /> </div>
+<div align="left"><img src="../../../static/img/datafor/visualizer/image-20220301201414723.png"   width="300" /> </div>
 
 2. 设置线条
 
