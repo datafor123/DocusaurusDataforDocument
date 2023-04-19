@@ -1,6 +1,6 @@
 ---
 id: map-geojsonmarked
-title: GGeoJSON marked map
+title: GeoJSON marked map
 sidebar_position: 20
 ---
 # GeoJSON marked map

@@ -5,11 +5,10 @@ sidebar_position: 10
 ---
 # 标签页（Tab）
 
-标签页可以容纳和展现多个组件，通过页签来切换展现内容。
+使用标签页可以在同一个界面中同时浏览和比较多个相关的数据视图或图表。标签页组件通常由一个标签条和多个标签页组成，每个标签页都包含一个不同的可视化元素或图表。
 
-## 应用场景
+标签页组件的主要优点是它可以节省屏幕空间，并提高用户对数据的比较和分析效率。通过标签页组件，用户可以轻松地切换不同的数据视图或图表，而无需切换不同的界面或打开多个窗口。
 
-页面的同一区域需要放置不同的组件，通过页签切换。
 
 <div align="left"><img src="../../../static/img/datafor/visualizer/20230109_131213.gif"  /></div>
 
@@ -17,11 +16,11 @@ sidebar_position: 10
 
 1. 辅助组件中选择“标签页”组件
 
-<div align="left"><img src="../../../static/img/datafor/visualizer/image-20230109131918435.png" alt="image-20230109131918435"   width="67%" /></div>
+<div align="left"><img src="../../../static/img/datafor/visualizer/image-20230109131918435.png" alt="image-20230109131918435"   width="30%" /></div>
 
 2. 增加新的标签页
 
-   在标签页的数据面板上增加、删除标签页
+   在标签页的数据面板上增加、删除标签页。
 
    <div align="left"><img src="../../../static/img/datafor/visualizer/image-20230109132150315.png"  /></div>
 
