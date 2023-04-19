@@ -1,7 +1,7 @@
 ---
 id: map-gisbjdt
 title: GIS标记地图
-sidebar_position: 1
+sidebar_position: 30
 ---
 # GIS标记地图
 
