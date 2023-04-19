@@ -1,6 +1,6 @@
 ---
 id: map-gisbjdt
-title: GIS Marked Map
+title: GIS marked map
 sidebar_position: 30
 ---
 # GIS Marked Map

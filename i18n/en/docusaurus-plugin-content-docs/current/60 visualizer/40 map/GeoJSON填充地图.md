@@ -1,6 +1,6 @@
 ---
 id: map-geojsonfilled
-title: GeoJSON Filled Map
+title: GeoJSON filled map
 sidebar_position: 10
 ---
 # GeoJSON Filled Map
