@@ -3,7 +3,7 @@ id: assist-bqy
 title: Tab
 sidebar_position: 10
 ---
-# Tab
+# Tabs
 
 Using tabs allows for browsing and comparing multiple related data views or charts within the same interface. Tab components typically consist of a tab bar and multiple tabs, with each tab containing a different visual element or chart.
 
