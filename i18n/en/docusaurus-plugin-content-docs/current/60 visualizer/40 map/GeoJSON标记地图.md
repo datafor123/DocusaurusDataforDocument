@@ -1,5 +1,5 @@
 ---
-id: map-geojsonfilled
+id: map-geojsonmarked
 title: GGeoJSON marked map
 sidebar_position: 20
 ---

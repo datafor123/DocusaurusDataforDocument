@@ -1,5 +1,5 @@
 ---
-id: map-geojsonfilled
+id: map-geojsonmarked
 title: GeoJSON标记地图
 sidebar_position: 20
 ---
