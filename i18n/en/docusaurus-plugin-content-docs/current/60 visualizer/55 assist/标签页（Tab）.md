@@ -1,6 +1,6 @@
 ---
 id: assist-bqy
-title: Tab
+title: Tabs
 sidebar_position: 10
 ---
 # Tabs
