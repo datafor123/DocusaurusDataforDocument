@@ -1,6 +1,6 @@
 ---
 id: advanced-mdx
-title: MDX Functions
+title: MDX函数
 sidebar_position: 20
 ---
 
