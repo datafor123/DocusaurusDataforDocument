@@ -50,9 +50,9 @@ chgrp -R datafor datafor-server
 
 <div align="left"><img src="../../../../../static/img/en/datafor/setup/image-20220829172501348.png"  /></div>
 
-**安装完毕**
+**Installation completed.**
 
-启停服务，参见日常启动
+
 
 ## Start Datafor
 
@@ -88,3 +88,11 @@ ps -ef|grep tomcat
 <div align="left"><img src="../../../../../static/img/en/datafor/setup/image-20220829172541387.png"  /></div>
 
 If the command produces the above output, it indicates that the service is in a running state.
+
+
+
+URL: http://localhost:28080/
+
+Default Username and Password:
+admin/password
+demo/demo
