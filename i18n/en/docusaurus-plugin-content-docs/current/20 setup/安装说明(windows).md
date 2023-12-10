@@ -1,6 +1,6 @@
 ---
 id: azybs-windows
-title: Install Datafor (Windows)
+title: Install Datafor(Windows)
 sidebar_position: 2
 ---
 # Install Datafor (Windows)

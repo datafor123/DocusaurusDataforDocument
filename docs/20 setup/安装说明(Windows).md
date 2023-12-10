@@ -1,7 +1,7 @@
 ---
 id: azybs-windows
-title: 安装Datafor（windows）
-sidebar_position:2
+title: 安装Datafor(windows)
+sidebar_position: 2
 ---
 # 安装Datafor（windows）
 ## 方式1:数据库以服务方式启动:
