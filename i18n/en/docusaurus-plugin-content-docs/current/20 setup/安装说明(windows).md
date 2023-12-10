@@ -1,9 +1,9 @@
 ---
 id: datafor-windows
-title: Datafor(Windows)Setup
+title: Installation of Datafor(Windows)
 sidebar_position: 30
 ---
-# Datafor(Windows) Setup
+# Installation of Datafor(Windows) 
 
 ## Method 1: Running as a Service
 

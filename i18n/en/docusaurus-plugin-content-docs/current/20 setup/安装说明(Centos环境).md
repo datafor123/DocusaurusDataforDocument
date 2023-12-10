@@ -1,10 +1,10 @@
 ---
 id: azybs-centos
-title: Install Datafor (CentOS)
+title: Installation of Datafor (CentOS)
 sidebar_position: 20
 ---
 
-# Install Datafor (CentOS)
+# Installation of Datafor (CentOS)
 
 **Step 1. Switch to the root user**
 

@@ -5,6 +5,9 @@ sidebar_position: 20
 ---
 
 # Datafor安装（Centos）
+
+## 安装步骤
+
  **步骤1. 切换root用户**
 
 ```
