@@ -1,5 +1,5 @@
 ---
-id: azybs-centos
+id: datafor-centos
 title: Installation of Datafor (CentOS)
 sidebar_position: 20
 ---
