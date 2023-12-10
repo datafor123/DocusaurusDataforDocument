@@ -1,5 +1,11 @@
-windows:
-方式1:数据库以服务方式启动:
+---
+id: azybs-windows
+title: 安装Datafor（windows）
+sidebar_position:2
+---
+# 安装Datafor（windows）
+## 方式1:数据库以服务方式启动:
+
 #第一次安装服务，双击运行
 install-service.bat
 #启动服务，双击运行
@@ -9,7 +15,8 @@ stop-service.bat
 #卸载服务，双击运行
 delete-service.bat
 
-方式2:以窗口运行
+## 方式2:以窗口运行
+
 #启动双击
 start-datafor.bat
 #关闭双击
@@ -20,5 +27,6 @@ stop-datafor.bat
 admin/password
 demo/demo
 
-#更新
+### #更新
+
 将 datafor-upload.jar 放置在upload文件夹下,请确保名字必须是datafor-upload.jar，在启动时会自动更新
