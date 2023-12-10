@@ -1,10 +1,10 @@
 ---
-id: azybs-centos
-title: 安装说明（Centos环境）
-sidebar_position: 2
+id: datafor-centos
+title: Datafor安装（Centos）
+sidebar_position: 20
 ---
 
-# 安装Datafor（Centos环境）
+# Datafor安装（Centos）
  **步骤1. 切换root用户**
 
 ```

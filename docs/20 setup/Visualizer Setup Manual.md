@@ -1,10 +1,10 @@
 ---
 id: visualizer-setup
-title: Visualizer插件安装
-sidebar_position: 20
+title: Visualizer(PBA插件)安装
+sidebar_position: 40
 ---
 
-# Visualizer插件安装
+# Visualizer(PBA插件)安装
 
 1. 将 **Visualizer.zip** 解压缩到 **pentaho-solutions\system** 目录。
 

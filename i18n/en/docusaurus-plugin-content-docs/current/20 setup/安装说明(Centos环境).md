@@ -1,7 +1,7 @@
 ---
 id: azybs-centos
 title: Install Datafor (CentOS)
-sidebar_position: 2
+sidebar_position: 20
 ---
 
 # Install Datafor (CentOS)

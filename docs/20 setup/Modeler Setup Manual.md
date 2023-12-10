@@ -1,10 +1,10 @@
 ---
 id: modeler-setup
-title: Modeler插件安装
-sidebar_position: 20
+title: Modeler(PBA插件)安装
+sidebar_position: 50
 ---
 
-# Modeler插件安装
+# Modeler(PBA插件)安装
 
 1. 将 "**Modeler.zip**" 解压缩到 "**pentaho-solutions\system**" 目录。
 

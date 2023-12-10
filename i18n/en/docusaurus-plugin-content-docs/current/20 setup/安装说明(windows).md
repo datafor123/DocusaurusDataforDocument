@@ -1,9 +1,9 @@
 ---
-id: azybs-windows
-title: Install Datafor(Windows)
-sidebar_position: 2
+id: datafor-windows
+title: Datafor(Windows)Setup
+sidebar_position: 30
 ---
-# Install Datafor (Windows)
+# Datafor(Windows) Setup
 
 ## Method 1: Running as a Service
 

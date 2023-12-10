@@ -1,7 +1,7 @@
 ---
 id: azybs-ubuntu
 title: 安装说明（Ubuntu环境）
-sidebar_position: 3
+sidebar_position: 35
 ---
 
 # 安装说明（Ubuntu环境）

@@ -1,9 +1,9 @@
 ---
 id: visualizer-setup
-title: Visualizer Setup Manual
-sidebar_position: 30
+title: Visualizer(plugin for PBA) Setup
+sidebar_position: 40
 ---
-# Visualizer Setup Manual
+# Visualizer(plugin for PBA) Setup Manual
 
 1. Unzip **Visualizer.zip** to the **pentaho-solutions\system** directory
 
