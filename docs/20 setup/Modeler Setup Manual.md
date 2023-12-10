@@ -8,7 +8,6 @@ sidebar_position: 20
 
 1. 将 "**Modeler.zip**" 解压缩到 "**pentaho-solutions\system**" 目录。
 
-   ![1692583361248](D:\github_projects\docs\static\img\datafor\setup\1692583361248.png)
    <div align="left"><img src="../../static/img/datafor/setup/1692584188749.png"  /></div>
 
 2. 在PBA（PostgreSQL）的存储库数据库中创建一个名为 "**datafor**" 的数据库。
