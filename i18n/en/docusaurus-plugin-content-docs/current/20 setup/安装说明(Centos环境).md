@@ -1,6 +1,6 @@
 ---
 id: datafor-centos
-title: Installation of Datafor (CentOS)
+title: Installation of Datafor(CentOS)
 sidebar_position: 20
 ---
 
