@@ -1,10 +1,10 @@
 ---
 id: modeler-setup
-title: Modeler(plugin for PBA) Setup
+title: Modeler(Plugin for PBA) Setup
 sidebar_position: 50
 ---
 
-# Modeler(plugin for PBA) Setup
+# Modeler(Plugin for PBA) Setup
 
 1. Extract "**Modeler.zip**" to the "**pentaho-solutions\system**" directory.
 
