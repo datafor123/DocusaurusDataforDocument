@@ -18,7 +18,7 @@ sidebar_position: 40
    <extension>datafor</extension>
    ```
 
-   ![image-20240117143902798](D:\github_projects\docs\static\img\en\datafor\setup\image-20240117143902798.png)
+   <div align="left"><img src="../../../../../static/img/en/datafor/setup/image-20240117143902798.png" /></div>
 
 3. Modify the **applicationContext-spring-security.xml** file in the **pentaho-solutions\system** directory.
 
@@ -27,18 +27,18 @@ sidebar_position: 40
    ```
    <sec:intercept-url pattern="\A/content/datafor/.*\Z" access="Anonymous,Authenticated" />
    ```
-   ![image-20240117144154812](D:\github_projects\docs\static\img\en\datafor\setup\image-20240117144154812.png)
+   <div align="left"><img src="../../../../../static/img/en/datafor/setup/image-20240117144154812.png" /></div>
 
     Add the following code under the **bean id="filterInvocationInterceptorForWS"** node:
    ```
    <sec:intercept-url pattern="\A/plugin/datafor/api/.*\Z" access="Anonymous,Authenticated" />
    <sec:intercept-url pattern="\A/plugin/datafor-modeler/api/.*\Z" access="Anonymous,Authenticated" />
    ```
-   ![image-20240117144417282](D:\github_projects\docs\static\img\en\datafor\setup\image-20240117144417282.png)
+   <div align="left"><img src="../../../../../static/img/en/datafor/setup/image-20240117144417282.png" /></div>
 
 4. In the **pentaho-solutions\system** directory, locate the **server.properties** file, and modify the value of **fully-qualified-server-url** according to the documentation instructions.
 
-   ![image-20240117144627174](D:\github_projects\docs\static\img\en\datafor\setup\image-20240117144627174.png)
+   <div align="left"><img src="../../../../../static/img/en/datafor/setup/image-20240117144627174.png" /></div>
 
 5. Installing Fonts (Required for Excel Export)
 

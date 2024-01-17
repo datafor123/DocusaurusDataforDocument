@@ -16,7 +16,7 @@ sidebar_position: 40
     <extension>datafor</extension>
    ```
 
-   ![1705472332237](D:\github_projects\docs\static\img\datafor\setup\1705472332237-1705473248761-2.png)
+   <div align="left"><img src="../../static/img/datafor/setup/1705472332237-1705473248761-2.png"  /></div>
 
 3. 修改 **pentaho-solutions\system** 目录中的 **applicationContext-spring-security.xml** 文件。
 
@@ -25,7 +25,8 @@ sidebar_position: 40
    ```
    <sec:intercept-url pattern="\A/content/datafor/.*\Z" access="Anonymous,Authenticated" />
    ```
-   ![1705472810466](D:\github_projects\docs\static\img\datafor\setup\1705472810466.png)
+   <div align="left"><img src="../../static/img/datafor/setup/1705472810466.png"  /></div>
+
 
    在 **bean id="filterInvocationInterceptorForWS"** 节点下添加：
 
@@ -34,11 +35,11 @@ sidebar_position: 40
    <sec:intercept-url pattern="\A/plugin/datafor-modeler/api/.*\Z" access="Anonymous,Authenticated" />
       ```
 
-   ![1705473027875](D:\github_projects\docs\static\img\datafor\setup\1705473027875.png)
+   <div align="left"><img src="../../static/img/datafor/setup/1705473027875.png"  /></div>
 
-4. 修改 **pentaho-solutions\system** 目录中的 **server.properties** 文件，修改fully-qualified-server-url。
+4. 在**pentaho-solutions\system** 目录中的 **server.properties** 文件，根据文档说明修改**fully-qualified-server-url**的值。
 
-   ![1705473144696](D:\github_projects\docs\static\img\datafor\setup\1705473144696.png)
+   <div align="left"><img src="../../static/img/datafor/setup/1705473144696.png"  /></div>
 
 5. 安装字体（用于Excel导出）
 
