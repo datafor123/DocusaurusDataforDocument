@@ -10,6 +10,8 @@ sidebar_position: 40
 
    <div align="left"><img src="../../static/img/datafor/setup/1692584188749.png"  /></div>
 
+   **注意：如果system目录下有旧版本的Visualizer插件，需要删除它，修改文件夹名字也不可以。**
+
 2. 修改 **pentaho-solutions\system** 目录中的 **ImportHandlerMimeTypeDefinitions.xml** 文件，并添加以下内容。
 
    ```
@@ -25,15 +27,14 @@ sidebar_position: 40
    ```
    <sec:intercept-url pattern="\A/content/datafor/.*\Z" access="Anonymous,Authenticated" />
    ```
-   <div align="left"><img src="../../static/img/datafor/setup/1705472810466.png"  /></div>
-
+   <div align="left"><img src="../../static/img/datafor/setup/1705660701060-1705660868955-1.png"  /></div>
 
    在 **bean id="filterInvocationInterceptorForWS"** 节点下添加：
 
-      ```
+   ```
    <sec:intercept-url pattern="\A/plugin/datafor/api/.*\Z" access="Anonymous,Authenticated" />
    <sec:intercept-url pattern="\A/plugin/datafor-modeler/api/.*\Z" access="Anonymous,Authenticated" />
-      ```
+   ```
 
    <div align="left"><img src="../../static/img/datafor/setup/1705473027875.png"  /></div>
 
@@ -41,7 +42,7 @@ sidebar_position: 40
 
    <div align="left"><img src="../../static/img/datafor/setup/1705473144696.png"  /></div>
 
-5. 安装字体（用于Excel导出）
+5. 安装字体（用于Excel导出）（仅Linux系统）
 
    如果无法导出Excel文件，可能是因为正在使用OpenJDK而未安装字体。请以root用户身份在服务器上执行以下命令以安装字体。
 

@@ -10,7 +10,7 @@ sidebar_position: 40
 
    <div align="left"><img src="../../../../../static/img/en/datafor/setup/1692584188749.png" /></div>
 
-   
+   **Note: If there is an old version of the Visualizer plugin in the system directory, it needs to be deleted; changing the folder name is also not allowed.**
 
 2. Modify the **ImportHandlerMimeTypeDefinitions.xml** file in the **pentaho-solutions\system** directory and add the following content.
 
@@ -27,9 +27,11 @@ sidebar_position: 40
    ```
    <sec:intercept-url pattern="\A/content/datafor/.*\Z" access="Anonymous,Authenticated" />
    ```
-   <div align="left"><img src="../../../../../static/img/en/datafor/setup/image-20240117144154812.png" /></div>
+
+   <div align="left"><img src="../../../../../static/img/en/datafor/setup/1705660701060-1705660868955-1.png" /></div>
 
     Add the following code under the **bean id="filterInvocationInterceptorForWS"** node:
+
    ```
    <sec:intercept-url pattern="\A/plugin/datafor/api/.*\Z" access="Anonymous,Authenticated" />
    <sec:intercept-url pattern="\A/plugin/datafor-modeler/api/.*\Z" access="Anonymous,Authenticated" />
@@ -40,7 +42,7 @@ sidebar_position: 40
 
    <div align="left"><img src="../../../../../static/img/en/datafor/setup/image-20240117144627174.png" /></div>
 
-5. Installing Fonts (Required for Excel Export)
+5. Installing Fonts (Only for Linux)
 
    If you are unable to export Excel files, it may be because OpenJDK is in use, and the required fonts are not installed. Please execute the following command on the server as the root user to install the fonts.
 
