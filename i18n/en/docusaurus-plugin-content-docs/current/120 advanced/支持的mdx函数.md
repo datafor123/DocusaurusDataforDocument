@@ -1,22 +1,22 @@
 ---
-id: advanced-XDM
+id: advanced-mdx
 title: MDX Functions
 sidebar_position: 30
 ---
 # MDX Functions
 
-MDX (Multidimensional Expressions) is a multidimensional data analysis language mainly used in the field of OLAP (Online Analytical Processing) systems for multidimensional data queries, analysis, statistics, and reporting. Datafor uses MDX functions and MDX queries to access, aggregate, filter, and calculate multidimensional data. Calculation indicators in Datafor are defined and calculated using MDX functions and MDX queries.
+MDX (Multidimensional Expressions) is a language for multidimensional data analysis, primarily used in OLAP (On-Line Analytical Processing) systems for multidimensional data querying, analysis, statistics, and reporting. Datafor utilizes MDX functions and MDX query statements to access, aggregate, filter, and compute multidimensional data. The calculated metrics in Datafor are defined and computed through MDX functions and MDX query statements.
 
-MDX functions are an important element of the MDX language used for processing multidimensional data, including accessing, aggregating, filtering, and calculating multidimensional data. MDX functions can be divided into the following categories:
+MDX functions are a crucial element of the MDX language, used to handle multidimensional data, including accessing, aggregating, filtering, and computing multidimensional data. MDX functions can be categorized as follows:
 
-1. Aggregation Functions: Aggregation functions are used to summarize data and are typically used to process statistical information such as total count, average, maximum, minimum, etc. These functions include COUNT, SUM, MIN, MAX, AVG, etc.
-2. Set Functions: Set functions are used to manipulate sets, such as intersection, union, complement, etc. These functions are often used in multidimensional data analysis to obtain specific data. Set functions include INTERSECT, UNION, COMPLEMENT, etc.
-3. Member Functions: Member functions are used to retrieve members, attributes, and other information from the dimension hierarchy. These functions are often used in multidimensional data analysis to obtain specific data. Member functions include MEMBER, DIMENSION, LEVEL, etc.
-4. Time Functions: Time functions are used to process time-related data, such as date addition and subtraction, timestamp conversion, date formatting, etc. These functions are often used in multidimensional data analysis to obtain specific data. Time functions include DATEADD, TIMESTAMP, FORMAT, etc.
-5. Logic Functions: Logic functions are used to process logical judgments and operations, such as IF, CASE, AND, OR, NOT, etc. These functions are often used in multidimensional data analysis to obtain specific data.
-6. String Functions: String functions are used to process strings, such as string concatenation, string replacement, string formatting, etc. These functions are often used in multidimensional data analysis to obtain specific data. String functions include CONCATENATE, REPLACE, FORMATSTRING, etc.
-7. Math Functions: Math functions are used to perform mathematical calculations, such as absolute value, square root, exponential, etc. These functions are often used in multidimensional data analysis to obtain specific data. Math functions include ABS, SQRT, EXP, etc.
-8. Type Conversion: Type conversion functions are used to convert data types, such as converting strings to numeric values, converting numeric values to strings, converting dates to strings, etc. These functions are often used in multidimensional data analysis to obtain specific data. Type conversion functions include CSTR, CINT, CDATE, etc.
+1. **Aggregate functions:** Used to summarize data, typically for statistics like the total, average, maximum, and minimum of a specific field in a dataset. Examples include COUNT, SUM, MIN, MAX, and AVG.
+2. **Set functions:** Used to manipulate sets, including union, intersection, and complement operations. These functions are often used in multidimensional data queries and analysis to retrieve specific data. Examples include INTERSECT, UNION, and COMPLEMENT.
+3. **Member functions:** Used to obtain members and attributes from the dimension hierarchy. These functions are typically used in multidimensional data queries and analysis to retrieve specific data. Examples include MEMBER, DIMENSION, and LEVEL.
+4. **Time functions:** Used to handle time-related data, including date addition/subtraction, timestamp conversion, and date formatting. These functions are often used in multidimensional data queries and analysis to retrieve specific data. Examples include DATEADD, TIMESTAMP, and FORMAT.
+5. **Logical functions:** Used for logical judgments and operations, including IF, CASE, AND, OR, and NOT. These functions are typically used in multidimensional data queries and analysis to retrieve specific data.
+6. **String functions:** Used to handle strings, including string concatenation, string replacement, and string formatting. These functions are often used in multidimensional data queries and analysis to retrieve specific data. Examples include CONCATENATE, REPLACE, and FORMATSTRING.
+7. **Mathematical functions:** Used to perform mathematical calculations, including absolute value, square root, and exponentiation. These functions are typically used in multidimensional data queries and analysis to retrieve specific data. Examples include ABS, SQRT, and EXP.
+8. **Type conversion:** Used to convert data types, such as converting strings to numbers, numbers to strings, and dates to strings. These functions are often used in multidimensional data queries and analysis to retrieve specific data. Examples include CSTR, CINT, and CDATE.
 
 ## Aggregation Functions
 
