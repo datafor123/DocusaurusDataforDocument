@@ -1,9 +1,8 @@
 ---
-id: advanced-mdx
-title: MDX-Functions
-sidebar_position: 20
+id: advanced-XDM
+title: MDX Functions
+sidebar_position: 30
 ---
-
 # MDX Functions
 
 MDX (Multidimensional Expressions) is a multidimensional data analysis language mainly used in the field of OLAP (Online Analytical Processing) systems for multidimensional data queries, analysis, statistics, and reporting. Datafor uses MDX functions and MDX queries to access, aggregate, filter, and calculate multidimensional data. Calculation indicators in Datafor are defined and calculated using MDX functions and MDX queries.
