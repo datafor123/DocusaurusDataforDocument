@@ -1,3 +1,9 @@
+---
+id: advanced-XDM
+title: Embedding Reports with XDM
+sidebar_position: 30
+---
+
 # Embedding Reports with XDM
 
 > [!NOTE]
@@ -114,8 +120,7 @@ The web application communicates with the report via postMessage, sending filter
 
    Refer to the sample project: [Passing Messages to Reports Using XDM](https://github.com/datafor123/visualizer-xmd-demo/tree/main).
 
-   ![1721293514716](D:\github_projects\docs\static\img\en\datafor\advanced\1721293514716.png)
-
+   <div align="left"><img src="../../../../../static/img/en/datafor/advanced/1721293514716.png" width="100%" /></div>
 7. **Opening Reports in New Windows or Tabs:**
 
    XDM can also be used to filter report data in reports opened in new windows or browser tabs.

@@ -1,3 +1,8 @@
+---
+id: advanced-XDM
+title: XDM方式嵌入报表
+sidebar_position: 30
+---
 # XDM方式嵌入报表
 
 > [!NOTE]
@@ -113,8 +118,7 @@ Web应用通过postMessage方式与报表进行通信，向报表发送过滤参
 6. **完整示例：**
 
    请参考示例项目：[使用XDM方式传递消息给报表](https://github.com/datafor123/visualizer-xmd-demo/tree/main)。
-
-   ![1721292876763](D:\github_projects\docs\static\img\datafor\advanced\1721292876763.png)
+   <div align="left"><img src="../../static/img/datafor/advanced/1721292876763-1721649415924-1.png"  width="100%" /></div>
 
 7. **在新窗口或新标签页中打开报表：**
 
