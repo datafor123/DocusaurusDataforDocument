@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  // title: "DATAFOR数据可视化与分析平台",
+  // title: "Datafor",
   // tagline: "Dinosaurs are cool",
   // url: "https://datafor.com.cn",
   // baseUrl: "/",
@@ -32,7 +32,7 @@ const config = {
   // 	}
   // },
 
-  title: "DATAFOR数据可视化与分析平台帮助文档",
+  title: "Datafor",
   tagline: "DATAFOR",
   url: "https://datafor123.github.io/",
   baseUrl: "/docs/",
@@ -116,34 +116,11 @@ const config = {
         style: "dark",
         links: [
           {
-            title: "上海数位信息技术有限公司",
-            items: [
-              {
-                label: "产品文档",
-                to: "/"
-              }
-            ]
-          },
-          {
-            title: "联系我们",
-            items: [
-              {
-                label: "联系我们",
-                href: "/"
-              }
-            ]
-          },
-          {
-            title: "更多",
-            items: [
-              {
-                label: "视频",
-                to: "/"
-              }
-            ]
+            title: "Datafor Co., Ltd.",
+
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} DATAFOR, Inc.`
+        copyright: `Copyright © ${new Date().getFullYear()} Datafor Co., Ltd.`
       },
       prism: {
         theme: lightCodeTheme,
