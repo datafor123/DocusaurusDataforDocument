@@ -1,5 +1,5 @@
 ---
-id: advanced-XDM
+id: share-XDM
 title: Embedding Reports with XDM
 sidebar_position: 30
 ---
