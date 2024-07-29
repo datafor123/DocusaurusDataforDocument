@@ -1,10 +1,10 @@
 ---
 id: datafor-centos
-title: Installation of Datafor(CentOS)
+title: Datafor Installation (CentOS) 
 sidebar_position: 20
 ---
 
-# Installation of Datafor (CentOS)
+# Datafor Installation (CentOS)
 
 **Step 1. Switch to the root user**
 

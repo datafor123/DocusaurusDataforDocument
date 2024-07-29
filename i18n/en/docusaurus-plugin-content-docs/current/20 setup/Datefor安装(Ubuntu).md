@@ -1,10 +1,10 @@
 ---
 id: datafor-ubuntu
-title: Installation of Datafor(Ubuntu)
+title: Datafor Installation (Ubuntu)
 sidebar_position: 35
 ---
 
-# Installation of Datafor(Ubuntu)
+# Datafor Installation (Ubuntu)
 ## Installation Steps
 
 **Step 1. Switch to the root user**
