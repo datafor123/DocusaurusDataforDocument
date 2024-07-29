@@ -1,62 +1,62 @@
 ---
 id: datafor-windows
-title: Installation of Datafor(Windows)
+title: Datafor Installation (Windows)
 sidebar_position: 30
 ---
-# Installation of Datafor(Windows) 
+# Datafor Installation (Windows)
 
-## Method 1: Running as a Service
+Log in to Windows as an **Administrator**.
 
-**For the first-time service installation, double-click to run:**
+## Method 1: Run with Window
 
-```
-install-service.bat
-```
+1. Start Datafor by double-clicking:
 
-**To start the service, double-click to run:**
+   ```
+   start-datafor.bat
+   ```
 
-```
-start-service.bat
-```
+2. Stop Datafor by double-clicking:
 
-**To stop the service, double-click to run:**
+   ```
+   stop-datafor.bat
+   ```
 
-```
-stop-service.bat
-```
+## Method 2: Run Datafor as a Service
 
-**To uninstall the service, double-click to run:**
+1. Install the service for the first time by double-clicking:
 
-```
-delete-service.bat
-```
+   ```
+   install-service.bat
+   ```
 
+2. Start the service by double-clicking:
 
+   ```
+   start-service.bat
+   ```
 
-## Method 2: Running in a Window
+3. Stop the service by double-clicking:
 
-**To start, double-click:**
+   ```
+   stop-service.bat
+   ```
 
-```
-start-datafor.bat
-```
+4. Uninstall the service by double-clicking:
 
-**To close, double-click:**
+   ```
+   delete-service.bat
+   ```
 
-```
-stop-datafor.bat
-```
+## Login
 
+URL: 
 
+`http://localhost:28080/`
+`username`  /  `password`
 
-## Accessing the System
+- `admin` / `password`
+- `demo` / `demo`
 
-URL: http://localhost:28080/
+## Update the System
 
-Default Username and Password:
-admin/password
-demo/demo
-
-## Updating the System
-
-Place datafor-upload.jar in the upload folder, make sure the name is exactly datafor-upload.jar. It will automatically update during startup.
+Place the update package `datafor-upload.jar` in the `datafor-server\update` folder and restart the system.

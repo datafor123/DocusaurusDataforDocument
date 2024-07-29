@@ -4,29 +4,62 @@ title: Datafor安装(windows)
 sidebar_position: 30
 ---
 # Datafor安装（windows）
-## 方式1:数据库以服务方式启动:
 
-#第一次安装服务，双击运行
-install-service.bat
-#启动服务，双击运行
-start-service.bat
-#停止服务，双击运行
-stop-service.bat
-#卸载服务，双击运行
-delete-service.bat
+以**管理员**身份登录windows
 
-## 方式2:以窗口运行
+## 方式1:以窗口运行
 
-#启动双击
+1. 启动双击
+
+   ```
 start-datafor.bat
-#关闭双击
-stop-datafor.bat
+   ```
 
-#访问地址:localhost:28080/
-默认用户名密码
-admin/password
-demo/demo
+2. 关闭双击
 
-### #更新
+   ```
+   stop-datafor.bat
+   ```
 
-将 datafor-upload.jar 放置在upload文件夹下,请确保名字必须是datafor-upload.jar，在启动时会自动更新
+
+
+## 方式2:数据库以服务方式启动:
+
+1. 第一次安装服务，双击运行
+
+   ```
+   install-service.bat
+   ```
+
+2. 启动服务，双击运行
+
+   ```
+   start-service.bat
+   ```
+
+5. 停止服务，双击运行
+
+   ```
+   stop-service.bat
+   ```
+
+
+6. 卸载服务，双击运行
+
+   ```
+   delete-service.bat
+   ```
+   
+
+## 登录
+
+地址: `http://localhost:28080/`
+默认用户名密码:
+`admin`/`password`
+`demo`/`demo`
+
+
+
+## 更新系统
+
+将更新包 `datafor-upload.jar` 放置在`datafor-server\update`文件夹下, 重启系统。
