@@ -1,7 +1,7 @@
 ---
 id: sjfx-tsxz
 title: 条数限制
-sidebar_position: 100
+sidebar_position: 90
 ---
 # 条数限制（Top/Bottom N）
 

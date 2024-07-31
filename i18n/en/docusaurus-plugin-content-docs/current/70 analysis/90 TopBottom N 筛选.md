@@ -1,7 +1,7 @@
 ---
 id: sjfx-tsxz
 title: Top/Bottom N
-sidebar_position: 100
+sidebar_position: 90
 ---
 # Top/Bottom N
 
