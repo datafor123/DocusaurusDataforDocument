@@ -11,21 +11,50 @@ id: intro
 title: Welcome
 ---
 
-# Datafor data visualization and analysis
+------
 
-Datafor is a self-service agile BI tool that provides intuitive and user-friendly data visualization and analysis capabilities to help users quickly explore, analyze, and make decisions with their data.
+# Datafor Visualization and Analysis Platform
 
-1. It supports connecting and integrating with multiple data sources, allowing for real-time analysis and visualization of data.
-2. Without writing any code, users can quickly create various types of data visualizations and charts using simple operations such as dragging and clicking.
-3. It has powerful data analysis capabilities, supporting features such as data pivoting and multidimensional analysis, which can help users uncover patterns and insights behind their data and address business issues.
-4. It seamlessly integrates with other tools and platforms, providing users with data visualization and analysis support for all their business needs.
+Datafor is a self-service agile Business Intelligence (BI) tool that offers intuitive data visualization and exploratory analysis capabilities, enabling users to quickly explore, analyze, and make data-driven decisions.
 
-## Downloaded and used in over 56 countries and regions
+## Over 56 Countries and Regions Download and Use Datafor
 
 
-<div align="left"><img  src="../../../../static/img/en/datafor/image-20220301171626435.png"  /></div>
+<div align="left"><img  src="../../../../static/img/en/datafor/image-20220301171626435.png"  width="80%"/></div>
 
-> 🚀**This document is continuously updated...**
+## **Key Features**
+
+- **Data Connectivity**: Supports connections to various data sources, including relational databases, NoSQL databases, data warehouses, cloud data sources, and file-based data sources.
+- **Data Visualization**: Provides a wide range of visual charts and elements, with customization options to help users create stunning data analysis reports and visual pages effortlessly.
+- **Multidimensional Analysis**: Offers powerful multidimensional analysis capabilities to help users dig deep into the data to uncover patterns and relationships, identifying potential business opportunities and issues.
+- **Embedded Analytics**: Enables the embedding of data visualization and analysis functionalities into other applications for real-time data visualization and analysis.
+- **Access Control**: Provides detailed access control features to meet various enterprise needs for data management and security.
+
+## **Use Cases**
+
+- **Data Analysis and Reporting**: Helps users easily connect, organize, and visualize data, quickly generating various types of data reports and analysis results.
+- **Business Intelligence and Decision Support**: Assists enterprises and organizations in building robust data analysis and decision support systems for more accurate and informed decision-making.
+- **Data Mining and Forecasting**: Helps users perform data mining and predictive analysis to uncover hidden patterns and trends within the data.
+- **Industry Research and Market Analysis**: Assists industry researchers and market analysts in easily obtaining, processing, and analyzing market data for a better understanding of market trends and competitive landscape.
+
+## **Advantages**
+
+- **Advanced Architecture**: Features completeness, high scalability, modularity, microservices, and extensibility, catering to various enterprise needs while allowing flexible customization and system function expansion.
+- **Rich Data Visualization Elements**: Provides a diverse range of visual charts and elements with personalization options, allowing users to freely design reports, dashboards, and big-screen displays according to their preferences and needs.
+- **Powerful Multidimensional Analysis**: Enables users to delve deep into the data to discover underlying patterns and relationships, identifying potential business opportunities and problems.
+- **Seamless Embedded Analytics**: Integrates seamlessly into other applications, becoming a part of them to deliver real-time data visualization and analysis functionality.
+- **Granular Access Control**: Meets various enterprise requirements for data management and security.
+
+## **How Datafor Benefits Enterprises and Organizations**
+
+- **Enhances Data Analysis Efficiency**: Helps users quickly connect, organize, and analyze data, significantly boosting data analysis efficiency.
+- **Enables Smarter Decisions**: Assists users in uncovering patterns and relationships within the data, identifying potential business opportunities and issues, leading to more informed decision-making.
+- **Improves Operational Efficiency**: Helps optimize business processes and enhance operational efficiency.
+- **Reduces Costs**: Lowers the costs associated with data analysis and decision-making.
+
+
+
+> 🚀**Start using Datafor now and unlock the value of your data!**
 
 
 
