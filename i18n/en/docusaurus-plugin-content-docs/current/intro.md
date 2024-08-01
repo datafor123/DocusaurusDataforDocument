@@ -54,4 +54,3 @@ Datafor is a self-service agile Business Intelligence (BI) tool that offers intu
 > 🚀**Start using Datafor now and unlock the value of your data!**
 
 
-
