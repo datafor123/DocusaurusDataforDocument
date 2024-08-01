@@ -7,6 +7,8 @@ sidebar_position: 150
 
 What-if 分析是一种预测性分析方法，用于评估在不同假设或情景下，特定变量变化对结果的影响。
 
+   <div align="left"><img src="../../static/img/datafor/analysis/lcgkq-qroaw.gif"  width="76%" /></div>
+
 以下是一个具体的示例，展示如何在 Datafor 中使用 What-If 参数进行销售预测分析：
 
 ### 场景：销售预测分析

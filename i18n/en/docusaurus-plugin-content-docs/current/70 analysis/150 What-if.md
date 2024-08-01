@@ -7,6 +7,8 @@ sidebar_position: 150
 
 What-if analysis is a predictive analysis method used to evaluate the impact of changes in specific variables under different assumptions or scenarios.
 
+   <div align="left"><img src="../../../../../static/img/en/datafor/analysis/gnix5-j1hnn.gif"  width="76%" /></div>
+
 Below is a detailed example demonstrating how to use What-If parameters in Datafor for sales forecast analysis:
 
 ### Scenario: Sales Forecast Analysis
@@ -86,6 +88,6 @@ Use Datafor's What-If parameter feature to simulate the impact of different pric
 
 7. **Interactive Analysis**
 
-   Adjust the "**Price Adjustment Percentage**" parameter to dynamically view changes in total sales revenue under different price adjustment scenarios.
+   Adjust the "**Price Adjustment Percentage**" parameter to dynamically view changes in **Adjusted Sales Revenue** under different price adjustment scenarios.
 
    <div align="left"><img src="../../../../../static/img/en/datafor/analysis/gnix5-j1hnn.gif"  width="100%" /></div>
