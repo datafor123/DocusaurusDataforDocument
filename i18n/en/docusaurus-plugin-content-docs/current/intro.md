@@ -11,14 +11,11 @@ id: intro
 title: Welcome
 ---
 
-------
-
-# Datafor Visualization and Analysis Platform
+# Datafor Visualization and Analysis
 
 Datafor is a self-service agile Business Intelligence (BI) tool that offers intuitive data visualization and exploratory analysis capabilities, enabling users to quickly explore, analyze, and make data-driven decisions.
 
-## Over 56 Countries and Regions Download and Use Datafor
-
+**Over 56 Countries and Regions Download and Use Datafor**
 
 <div align="left"><img  src="../../../../static/img/en/datafor/image-20220301171626435.png"  width="80%"/></div>
 
@@ -45,7 +42,7 @@ Datafor is a self-service agile Business Intelligence (BI) tool that offers intu
 - **Seamless Embedded Analytics**: Integrates seamlessly into other applications, becoming a part of them to deliver real-time data visualization and analysis functionality.
 - **Granular Access Control**: Meets various enterprise requirements for data management and security.
 
-## **How Datafor Benefits Enterprises and Organizations**
+## **How Datafor Benefits**
 
 - **Enhances Data Analysis Efficiency**: Helps users quickly connect, organize, and analyze data, significantly boosting data analysis efficiency.
 - **Enables Smarter Decisions**: Assists users in uncovering patterns and relationships within the data, identifying potential business opportunities and issues, leading to more informed decision-making.
