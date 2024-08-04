@@ -1,7 +1,7 @@
 ---
 id: datasource-JDBC-driver
 title: JDBC Driver Management
-sidebar_position: 70
+sidebar_position: 20
 ---
 
 # JDBC Driver Management
