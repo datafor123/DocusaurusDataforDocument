@@ -4,17 +4,17 @@ title: Deploying Datafor Using Docker
 sidebar_position: 50
 ---
 
-## Deploying Datafor Using Docker
+# Deploying Datafor Using Docker
 
 Datafor can be easily deployed using Docker. This guide provides the steps and commands to deploy the free version of Datafor.
 
-### Prerequisites
+## Prerequisites
 
 Before you start, ensure you have the following:
 
 - Docker installed on your machine. If you don't have Docker installed, you can download and install it from the Docker website.
 
-### Deployment Steps
+## Deployment Steps
 
 1. **Open a Terminal or Command Prompt**:
 
@@ -63,7 +63,7 @@ Before you start, ensure you have the following:
    - Open your web browser and navigate to `http://localhost:28080`.
    - You should see the Datafor interface. If you need to connect to the database, you can use port `25432`.
 
-### Stopping and Removing the Container
+## Stopping and Removing the Container
 
 - To stop the Datafor container, use:
 
