@@ -1,7 +1,7 @@
 ---
 id: datafor-ubuntu
 title: Datafor安装(Ubuntu)
-sidebar_position: 35
+sidebar_position: 30
 ---
 
 # Datafor安装(Ubuntu)

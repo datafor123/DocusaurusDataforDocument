@@ -1,7 +1,7 @@
 ---
 id: datafor-windows
 title: Datafor安装(windows)
-sidebar_position: 30
+sidebar_position: 40
 ---
 # Datafor安装（windows）
 

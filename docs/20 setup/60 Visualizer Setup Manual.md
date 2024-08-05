@@ -1,7 +1,7 @@
 ---
 id: visualizer-setup
 title: Visualizer(PBA插件)安装
-sidebar_position: 40
+sidebar_position: 60
 ---
 
 # Visualizer(PBA插件)安装

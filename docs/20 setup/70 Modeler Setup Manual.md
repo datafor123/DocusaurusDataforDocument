@@ -1,7 +1,7 @@
 ---
 id: modeler-setup
 title: Modeler(PBA插件)安装
-sidebar_position: 50
+sidebar_position: 70
 ---
 
 # Modeler(PBA插件)安装
