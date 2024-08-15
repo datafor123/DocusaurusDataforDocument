@@ -4,123 +4,185 @@ title: Embedding Reports with XDM
 sidebar_position: 30
 ---
 
-# Embedding Reports with XDM
+# Embedding Reports Using XDM
 
-> [!NOTE]
->
-> In this document, "report" refers to visual reports created using the Datafor or Visualizer plugin.
+> **Note:**
+> The term "**report**" in this document refers to the visual reports created using Datafor or the Visualizer plugin.
 
-Reports support XDM (Cross-Document Messaging) to filter report data without refreshing the report page. XDM can control data filtering, styles, and behavior of the reports. This guide focuses on data filtering.
+Reports support XDM (Cross-Document Messaging) for filtering report data without refreshing the report page. XDM allows control over the report's data filtering, styles, and behavior; however, this document focuses solely on data filtering scenarios.
 
-## Scenario:
+## What is XDM (Cross-Document Messaging)?
 
-When embedding reports in a web application using an iframe, you may need to:
+XDM (Cross-Document Messaging) is a technology that allows secure communication between different web pages or applications from different origins (such as different domains or subdomains). Typically, browsers restrict different-origin pages from accessing each other's content to protect user privacy and security. However, in some cases, such as when embedding external content, different-origin pages need to communicate, and XDM can be used for this purpose.
 
-1. Filter the report data on the initial load.
-2. Dynamically filter the report data without refreshing the report.
+Web applications use the `postMessage` API to communicate with the report, sending parameter values to the report. The report then distributes these parameter values as filters to the individual chart components, which re-query data to achieve the filtering effect.
 
-## Principle:
+XDM enables cross-origin communication between web pages without compromising browser security.
 
-The web application communicates with the report via postMessage, sending filter parameters to the report. The report uses these parameters as filters, distributing them to each chart component, which then re-queries to achieve data filtering.
+## Application Scenarios:
 
-## Usage:
+When embedding a report within a web application using an iframe, the following scenarios may arise:
 
-1. **Add Query Parameter to the Report URL:**
+1. Passing parameters to the report during initial loading to filter report data.
+2. Changing parameter values in the web application after the report has loaded and passing these values to the report to filter data (without reloading the report).
 
-   When opening the report in the main program, add the query parameter `__xdmTimeout=150` to the report URL, for example: `http://hostname:port/datafor/index.html?__xdmTimeout=150`.
+## Steps:
 
-   Explanation: After opening the report, it will broadcast an initialization message and wait for 150ms. If a valid response is received within this time, the response information will be used as the initial data filtering condition. Adjust the delay time based on the main program's response speed. If filtering is not needed on the initial load, this parameter can be omitted.
+### **Importing the `XDMWorker` Class in the Main Program:**
 
-2. **Include XMDWorker Class in the Main Program:**
+In the main program that calls the report, add the following `XDMWorker` class to facilitate the forwarding of `XDM` messages. The main program can use the `send` method of this class to pass filter parameters to the report.
 
-   Add the following class XMDWorker in the main program to forward XDM messages. The main program can use the send method of this class to pass filter parameters to the report.
+```js
+class XDMWorker {
+    constructor({ onPageInitEvent = () => { } }) {
+        this.reportId = null;
+        window.addEventListener('message', (msg) => {
+            const { data } = msg;
+            let reportMessage;
+            try { reportMessage = JSON.parse(data); } catch (d) { }
+            if (reportMessage) {
+                if (reportMessage.event == 'visualizerReportFileLoaded') {
+                    this.reportId = reportMessage.id;
+                    onPageInitEvent();
+                }
+            }
+        });
+    }
 
-   ```js
-   class XMDWorker {
-       constructor({ onPageInitEvent = () => { } }) {
-           this.reportId = null;
-           window.addEventListener('message', (msg) => {
-               const { data } = msg;
-               let reportMessage;
-               try { reportMessage = JSON.parse(data); } catch (d) { }
-               if (reportMessage) {
-                   if (reportMessage.event == 'visualizerReportFileLoaded') {
-                       this.reportId = reportMessage.id;
-                       onPageInitEvent();
-                   }
-               }
-           });
-       }
-   
-       send(data, target, init = false) {
-           if (!this.reportId) {
-               console.error('No reportId found, please wait for the report to be loaded');
-               return;
-           }
-           const message = {
-               trustMark: this.reportId,
-               event: 'query',
-               init,
-               filters: data,
-           };
-           target?.postMessage(JSON.stringify(message), '*');
-       }
-   }
+    send(data, target, init = false) {
+        if (!this.reportId) {
+            console.error('No reportId found, please wait for the report to be loaded');
+            return;
+        }
+        const message = {
+            trustMark: this.reportId,
+            event: 'query',
+            init,
+            filters: data,
+        };
+        target?.postMessage(JSON.stringify(message), '*');
+    }
+}
+```
+
+### Scenario 1: Passing Parameters to the Report During Initial Loading to Filter Data
+
+1. **Initialize an XDMWorker Object Before Calling the Report:**
+
+   Before calling the report, initialize an `XDMWorker` object. To filter report data during the initial load, call the `send` method within the `onPageInitEvent` event, setting the third parameter to `true`.
+
+   **Example:**
+
    ```
-
-3. **Initialize XDMWorker Before Creating the Iframe:**
-
-   Before creating the iframe to open the report, initialize an XDMWorker object. If filtering is needed on the initial load, call the send method within the `onPageInitEvent` event and set the third parameter to true.
-
-   ```js 
-   const xdm = new XMDWorker({
+   const xdm = new XDMWorker({
        onPageInitEvent: () => {
-           iframeRef?.current && xdm.send(
-               [
-                   //message
-               ], 
-               iframeRef.current?.contentWindow, 
-               true
-           );
+          iframeRef?.current && xdm.send(
+                  [
+                     {
+                       value: [
+                         'product_family_1', 
+                         'product_family_2' 
+                       ],  
+                       name: '[product_class].[hierarchy_product_family].[product_family]',  
+                       type: 'name',  
+                       datatype: 'string'  
+                     }
+                  ], 
+                  iframeRef.current?.contentWindow, 
+                  true  
+              );
        }
    });
    ```
 
-4. **Dynamically Control Report Filters:**
+   **Parameter Description:**
 
-   After opening the report, call the send method from the main program to dynamically control report filters. The report will respond immediately and re-query data.
-
-5. **Send Method Format:**
-
-   ```js   
-   send(message, target, init)
+   ```
+   [{
+       value: [
+           [
+               {i: 0|1, v: string},  
+               {i: 0|1, v: string}
+           ], 
+           string,  
+       ],  
+       name: string,  
+       type: 'name'|'caption',  
+       datatype: 'string'|'numeric'|'timestamp'  
+   }]
    ```
 
-   Parameter Description:
-   - `message`: Array of filter parameters in the following format:
-     ```js
+   - **value:** Parameter values from the web application.
+
+   | Value Type                                                   | Example                                                      |
+   | ------------------------------------------------------------ | ------------------------------------------------------------ |
+   | x in ('a', 'b', 'c')                                         | {'value':['a', 'b', 'c'],'datatype':'string'}                |
+   | x >= 1 and x < 3                                             | {'value':[{'i':'1','v':'1'},{'i':'0','v':'3'}],'datatype':'numeric'} |
+   | x between (2, 5) or x between (4, 6)                         | {'value':[['2', '5'], ['4', '6']],'datatype':'numeric'}      |
+   | x between (2, 5) or x between (4, 6) or x in (7, 8)          | {'value':[['2', '5'], ['4', '6'], '7', '8'],'datatype':'numeric'} |
+   | x >= '2024-01-01 00:00:00+8' and x < '2025-01-01 00:00:00+8' | {'value':[{'i':'1','v':'1704038400'},{'i':'0','v':'1735660800'}],'datatype':'timestamp'} |
+
+   - **name:** The unique name of the field in the report’s analytical model.
+   - **type:** Specifies whether the parameter value is applied to the field’s name or caption.
+   - **datatype:** The data type of the filter value.
+
+2. **Call the Report**
+
+   - Obtain the report's embedding mode URL.
+
+     [Reference Document](https://help.datafor.com.cn/docs/en/80 share/jcyfx-report-api)
+
+   - Add a "delay time parameter" to the report URL:
+
+     Add the **delay time parameter** `__xdmTimeout=150` to the report link, e.g., `http://localhost:28080/datafor/plugin/datafor/api/integrate/L2hvbWUvYWRtaW4vZXhhbXBsZTEuZGF0YWZvcg==?__xdmTimeout=150`.
+
+     > **Note:**
+     > **What is the "delay time parameter"?** After the report is opened, it will broadcast a report initialization message and wait for 150ms. If a valid response is received within the wait time, the parameters in the response are used as the initial data filter values. You can adjust this delay time based on the main program’s response speed. If data filtering is not required during the initial report load, this parameter can be omitted.
+
+### Scenario 2: Changing Parameter Values in the Web Application After the Report Has Loaded to Filter Data (Without Reloading the Report)
+
+1. **Call the send Method**
+
+   After the report page is opened, if you need to pass parameter values from the web application to the report, you can call the send method in the main program. The report will immediately respond and re-query the data.
+
+2. **send Method Call Format:**
+
+   ```
+   send(message, target)
+   ```
+
+   **Parameter Description:**
+
+   - **message:** The filter parameters in the following format:
+
+     ```
      [{
          value: [
              [
-                 {i: 0|1, v: string|number},  // Range filter: includes i (0 or 1) and v (boundary value, number or string)
-                 {i: 0|1, v: string|number}
+                 {i: 0|1, v: string},  
+                 {i: 0|1, v: string}
              ], 
-             string|number,  // Original value
-             ...
+             string,  
          ],  
-         name: string,  // The uniqueName property value of the target level in the multi-dimensional analysis model
-         type: string,  // Filter action type: "name" or "caption"
-         datatype: string|number|timestamp  // Data type of the filter value
+         name: string,  
+         type: 'name'|'caption',  
+         datatype: 'string'|'numeric'|'timestamp'  
      }]
      ```
-   - `target`: Window object of the iframe containing the Visualizer report
-   - `init`: Boolean indicating if the filter parameters are for initial report load
 
-6. **Complete Example:**
+   - **target:** The window object of the iframe where the report is opened.
 
-   Refer to the sample project: [Passing Messages to Reports Using XDM](https://github.com/datafor123/visualizer-xmd-demo/tree/main).
+## How to Obtain the `uniqueName` of Analytical Model Fields?
 
-   <div align="left"><img src="../../../../../static/img/en/datafor/advanced/1721293514716.png" width="100%" /></div>
-7. **Opening Reports in New Windows or Tabs:**
+In the report designer, when selecting analytical model fields, you can view the `uniqueName` through the tooltip.
 
-   XDM can also be used to filter report data in reports opened in new windows or browser tabs.
+The `uniqueName` of the `product_department` field in the image below is `[product_class].[product_department].[product_department]`.
+
+
+<div align="left"><img src="../../../../../static/img/en/datafor/share/1723711770233.png" width="63%"/></div>
+
+## Sample Project
+
+Please refer to the sample project: https://github.com/datafor123/visualizer-xmd-demo
+
+<div align="left"><img src="../../../../../static/img/en/datafor/advanced/1721293514716.png" width="100%" /></div>
