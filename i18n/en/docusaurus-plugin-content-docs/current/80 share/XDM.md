@@ -183,6 +183,6 @@ The `uniqueName` of the `product_department` field in the image below is `[produ
 
 ## Sample Project
 
-Please refer to the sample project: https://github.com/datafor123/visualizer-xmd-demo
+Please refer to the sample project: https://github.com/datafor123/visualizer-xdm-demo
 
 <div align="left"><img src="../../../../../static/img/en/datafor/advanced/1721293514716.png" width="100%" /></div>
