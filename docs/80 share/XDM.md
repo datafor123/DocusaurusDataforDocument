@@ -196,6 +196,6 @@ Web应用通过`postMessage` API与报表进行通信，向报表发送参数值
 
 ## 示例项目
 
-   请参考示例项目：https://github.com/datafor123/visualizer-xmd-demo
+   请参考示例项目：https://github.com/datafor123/visualizer-xdm-demo
 
    <div align="left"><img src="../../static/img/datafor/advanced/1721292876763-1721649415924-1.png"  width="100%" /></div>
