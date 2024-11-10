@@ -90,3 +90,15 @@ ps -ef|grep tomcat
 <div align="left"><img src="../../static/img/datafor/setup/image-20220829172541387.png"  /></div>
 
 命令如上输出，则表示服务处于运行状态
+
+## 登录
+
+地址: `http://localhost:28080/`
+
+默认用户名密码:
+`admin`/`password`
+`demo`/`demo`
+
+## 更新系统
+
+将更新包 `datafor-upload.jar` 放置在`datafor-server\update`文件夹下, 重启系统。

@@ -93,8 +93,13 @@ If the command produces the above output, it indicates that the service is in a 
 
 ## Login
 
-URL: http://localhost:28080/
+URL:  `http://localhost:28080/`
 
-Default Username and Password:
-admin/password
-demo/demo
+username  /  password
+
+- `admin` / `password`
+- `demo` / `demo`
+
+## Update the System
+
+Place the update package `datafor-upload.jar` in the `datafor-server\update` folder and restart the system.

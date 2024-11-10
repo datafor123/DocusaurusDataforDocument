@@ -49,11 +49,9 @@ Log in to Windows as an **Administrator**.
 
 ## Login
 
-URL: 
+URL:  `http://localhost:28080/`
 
-`http://localhost:28080/`
-
-`username`  /  `password`
+username  /  password
 
 - `admin` / `password`
 - `demo` / `demo`

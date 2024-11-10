@@ -89,3 +89,16 @@ ps -ef|grep tomcat
 <div align="left"><img src="../../../../../static/img/datafor/setup/image-20220829171716368.png"  /></div>
 
 **If the command outputs as above, it indicates that the service is in a running state.**
+
+## Login
+
+URL:  `http://localhost:28080/`
+
+username  /  password
+
+- `admin` / `password`
+- `demo` / `demo`
+
+## Update the System
+
+Place the update package `datafor-upload.jar` in the `datafor-server\update` folder and restart the system.
